@@ -5,7 +5,6 @@ author: 'Jane Doe'
 path: '/second-post'
 image: ../../images/joy_dog.jpg
 tags:
-- code
 - design
 - tutorial
 ---
