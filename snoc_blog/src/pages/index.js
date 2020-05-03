@@ -2,18 +2,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, StaticQuery } from "gatsby"
-
-import {Row, Col } from 'reactstrap'
-
-import Sidebar from '../components/Sidebar'
 import Post from "../components/Post"
 
 const IndexPage = () => (
-  <Layout>
+  <Layout pageTitle="School of Natural Order">
     <SEO title="Home" />
-    <h1>Home Page</h1>
-    <Row>
-      <Col md="8">
       <StaticQuery
       query={indexQuery}
       render={data => {
@@ -35,11 +28,7 @@ const IndexPage = () => (
         )
       }}
     />
-      </Col>
-      <Col md="4">
-        <Sidebar />
-      </Col>
-    </Row>
+
   </Layout>
 )
 
