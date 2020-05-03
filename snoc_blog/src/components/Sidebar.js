@@ -6,7 +6,7 @@ import {
   Form,
   FormGroup,
   Input,
-  Button,
+  
 } from "reactstrap"
 import { graphql, StaticQuery, Link } from "gatsby"
 
@@ -60,7 +60,7 @@ const Sidebar = () => (
                   </Link>
                   <CardBody>
                       <CardTitle>
-                          <Link to={node.frontmatter.slug}>
+                          <Link to={node.fields.slug}>
                           {node.frontmatter.title}
                           </Link>
                       </CardTitle>
